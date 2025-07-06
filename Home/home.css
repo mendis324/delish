@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --secondary-colour:#111111;
+    --primary-colour:#CB3A1A;
+    --paragraph-colour:#74787C;
+    --white-colour:#ffffff;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Jost", sans-serif;
+}
+/*top bar*/
+.top-bar{
+    width: 100%;
+    height: 152px;
+    background-color: var(--secondary-colour);
+    position: ;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.top-bar-container{
+    width: 93%;
+    margin-top: 25px;
+    margin-bottom: 0;
+    height: 37px;
+    display: flex; 
+}
+.top-bar-infor-item{
+    flex: 1;
+    color: var(--white-colour);
+    
+}
+.top-bar-infor-left ul{
+    list-style: none;
+    display: flex;
+}
+.top-bar-infor-left ul li{
+    padding: 0 10px;
+}
+
+.top-bar-infor-right{
+    display: flex;
+    justify-content: end;
+
+}
+.top-bar-infor-right ul{
+    list-style: none;
+    display: flex;
+}
+.top-bar-infor-right ul li{
+    padding: 0 10px;
+}
+.top-bar-infor-right ul li:hover{
+    color: var(--paragraph-colour);
+    cursor: pointer;
+}
+.top-bar-buttons{
+    width: 93%;
+    height: 90px;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+}
+.top-bar-logo img{
+    width: 165px;
+    height: 50px;   
+}
+.top-bar-buttons-menu{
+    height: 12px;
+}
+.top-bar-buttons-menu ul{
+    display: flex;
+}
+.top-bar-buttons-menu ul li{
+    list-style: none;
+    font-size: 12px;
+    color: var(--white-colour);
+    flex: 1;
+}
+.top-bar-buttons-menu ul li:hover{
+    color: var(--paragraph-colour);
+    cursor: pointer;
+}
+.book-a-table{
+    height: 50px;
+    display: flex;
+    justify-content: end;
+    color: var(--white-colour);
+    font-size: 16px; 
+}
+.booking-table{
+    width: 245px;
+    height: 100%;
+    border: 1px solid var(--primary-colour);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.booking-table:hover{
+    color: var(--paragraph-colour);
+    cursor: pointer;
+}
+.buttons-bar{
+    flex: 1;
+}
+/*top bar*/
+
+/*welcome part*/
+.welcome-part{
+    width: 100%;
+    height: 560px;
+    border: 1px solid red;
+    background-image: url(img/home-page-main-pic.png);
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.welcome-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--white-colour);
+    border: 1px solid var(--white-colour);
+    white-space: nowrap;
+}
+.line-text{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+
+
+
+
+
+/*welcome part*/
