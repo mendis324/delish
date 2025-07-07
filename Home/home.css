@@ -5,7 +5,7 @@
     --primary-colour:#CB3A1A;
     --paragraph-colour:#74787C;
     --white-colour:#ffffff;
-
+    --faded-white:#FAF4EE
 }
 *{
     margin: 0;
@@ -183,6 +183,8 @@
     background-color: var(--primary-colour);
     border-radius: 5px;
     color: var(--white-colour);
+    border: none;
+    width: 130px;
 } 
 .welcome-deatils-inner .reservation button:hover{
     color: var(--paragraph-colour);
@@ -190,6 +192,34 @@
 .welcome-deatils-inner p{
     color: var(--paragraph-colour);
 }
+.welcome-hotlline{
+    display: flex;
+    width: 100%;
+    height: 60px;
+}
+.hotline-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color:var(--primary-colour) ; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hotline-img img{
+    width: 60%;    
+}
+.hotline-itm{
+    display: flex;   
+}
+.hotline-num{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 10px;
+}
+
 .burger {
     right: 0;
     position: absolute;
@@ -197,12 +227,246 @@
     justify-content: end;
     margin-top: 5px;
 }
+
 .burger img{
     width: 40%;
     right: 0;
 }
-
-
-
-
 /*welcome massage*/
+
+/*resturent service*/
+.resturent-service{
+   width: 100%;
+   height: 800px;
+   background-color: var(--faded-white); 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.resturent-service-inner{
+    width:95% ;
+    height: 85%;
+    display: flex; 
+    position: relative;   
+    flex-direction: column;
+    align-items: center;
+}
+.resturent-service-text{
+    width: 30%;
+    height: 15%;
+    margin-top: 40px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+.resturent-service-text button {
+    background-color: var(--primary-colour);
+    color: var(--white-colour);
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+}
+.resturent-service-text .vertical-line{
+    width: 1px;
+    height: 15px;
+    background-color: var(--primary-colour);
+}
+.resturent-service-text .squer{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+.resturent-service-text .squer img{
+    width: 40%;
+}
+.leaf-img{
+    right: 0;
+    width: 190px;
+    height: 170px;
+    position: absolute;
+}
+.leaf-img img{
+    width: 100%;
+}
+.food-item{
+    width: 70%;
+    height: 60%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.menued-food{
+  width: 32%;
+  height: 90%;  
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--white-colour);
+}
+.menued-food-details{
+    width: 85%;
+    height: 50%;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: relative;
+}
+.menued-food-details p{
+    color: var(--paragraph-colour);
+    font-size: 15px;
+    margin-top: 10px;
+}
+.menued-food img{
+    width: 85%;
+    margin-top: 15px;
+}
+.read-more{
+    display: flex;
+    gap: 8px;
+    bottom: 20px;
+    position: absolute;
+    border: 1px solid var(--primary-colour);
+    width: 60%;
+    color: var(--primary-colour);
+    align-items: center;
+    justify-content: center;
+    transition: all 300ms linear;
+}
+.read-line {
+  width: 10px;
+  height: 2px;
+  background-color: var(--primary-colour);
+  border: none;
+}
+.read-more:hover{
+    cursor: pointer;
+    transform:scale(1.1)
+}
+/*responsive*/
+/* ============================= */
+/*        RESPONSIVE CSS        */
+/* ============================= */
+
+@media (max-width: 1200px) {
+  .top-bar-container,
+  .top-bar-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .top-bar-infor-left ul,
+  .top-bar-infor-right ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .top-bar-buttons-menu ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .booking-table {
+    width: auto;
+    padding: 5px 10px;
+  }
+}
+
+@media (max-width: 992px) {
+  .welcome-part {
+    height: auto;
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .welcom-buttons {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .welcome-massage {
+    flex-direction: column;
+    height: auto;
+    padding: 30px 10px;
+  }
+
+  .brocli-img img {
+    width: 60%;
+    height: auto;
+  }
+
+  .burger img {
+    width: 60%;
+    position: relative;
+  }
+
+  .welcome-deatils-inner {
+    margin-top: 40px;
+    width: 90%;
+  }
+
+  .leaf-img {
+    display: none;
+  }
+
+  .resturent-service-text {
+    width: 90%;
+    text-align: center;
+  }
+
+  .food-item {
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+  }
+
+  .menued-food {
+    width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .top-bar {
+    height: auto;
+  }
+
+  .top-bar-infor-left ul,
+  .top-bar-infor-right ul {
+    font-size: 12px;
+  }
+
+  .top-bar-buttons-menu ul li {
+    font-size: 11px;
+  }
+
+  .welcome-text h1 {
+    font-size: 28px;
+  }
+
+  .welcome-text h2 {
+    font-size: 20px;
+  }
+
+  .line-text {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .read-more {
+    width: 80%;
+    font-size: 13px;
+  }
+
+  .welcome-deatils-inner h2 {
+    font-size: 18px;
+  }
+
+  .booking-table {
+    width: 90%;
+  }
+}
