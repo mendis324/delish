@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --secondary-colour: #111111;
+    --primary-colour: #CB3A1A;
+    --paragraph-colour: #74787C;
+    --white-colour: #ffffff;
+    --faded-white: #FAF4EE;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jost", sans-serif;
+}
+
+body {
+    background-color: var(--white-colour);
+    color: var(--secondary-colour);
+}
+
+/* Top Bar */
+.top-bar {
+    width: 100%;
+    height: 152px;
+    background-color: var(--secondary-colour);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.top-bar-container {
+    width: 93%;
+    margin-top: 25px;
+    height: 37px;
+    display: flex;
+    color: var(--white-colour);
+}
+
+.top-bar-infor-item {
+    flex: 1;
+}
+
+.top-bar-infor-left ul,
+.top-bar-infor-right ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.top-bar-infor-left ul li,
+.top-bar-infor-right ul li {
+    padding: 0 10px;
+    font-size: 12px;
+}
+
+.top-bar-infor-right {
+    display: flex;
+    justify-content: end;
+}
+
+.top-bar-infor-right ul li:hover {
+    color: var(--paragraph-colour);
+    cursor: pointer;
+}
+
+.top-bar-buttons {
+    width: 93%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+}
+
+.top-bar-logo img {
+    width: 165px;
+    height: 50px;
+}
+
+.top-bar-buttons-menu ul {
+    display: flex;
+    gap: 20px;
+}
+
+.top-bar-buttons-menu ul li {
+    list-style: none;
+    font-size: 14px;
+    color: var(--white-colour);
+    cursor: pointer;
+}
+
+.top-bar-buttons-menu ul li:hover {
+    color: var(--paragraph-colour);
+}
+
+.book-a-table {
+    display: flex;
+    justify-content: end;
+    font-size: 16px;
+    color: var(--white-colour);
+}
+
+.booking-table {
+    width: 245px;
+    height: 50px;
+    border: 1px solid var(--primary-colour);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.booking-table:hover {
+    color: var(--paragraph-colour);
+}
+
+.buttons-bar {
+    flex: 1;
+}
+
+/* Hero Banner */
+.hero-banner {
+    background: url('your-banner-image.jpg') center center / cover no-repeat;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white-colour);
+    text-align: center;
+    position: relative;
+}
+
+.hero-banner h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-banner p {
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+/* Chef Details */
+.chef-details {
+    padding: 3rem 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.chef-card {
+    display: flex;
+    background: var(--faded-white);
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 1000px;
+    gap: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.chef-info {
+    flex: 1;
+}
+
+.chef-info h2 {
+    margin-bottom: 0.2rem;
+}
+
+.chef-info h4 {
+    color: var(--primary-colour);
+    margin-bottom: 1rem;
+}
+
+.chef-info p {
+    color: var(--paragraph-colour);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.contact-grid i {
+    margin-right: 0.5rem;
+    color: var(--primary-colour);
+}
+
+.chef-info button {
+    background: var(--primary-colour);
+    color: var(--white-colour);
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.chef-photo {
+    flex: 1;
+    max-width: 350px;
+}
+
+.chef-photo img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Call to Action */
+.cta {
+    background: #eeeeee;
+    padding: 3rem 5%;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--secondary-colour);
+}
+
+.cta button {
+    background: transparent;
+    border: 1px solid var(--secondary-colour);
+    padding: 0.7rem 1.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    color: var(--secondary-colour);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--secondary-colour);
+  color: var(--white-colour);
+  padding: 4rem 5%;
+}
+
+.footer .footer-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-column h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: var(--primary-colour);
+}
+
+.footer-column p,
+.footer-column li {
+  font-size: 0.95rem;
+  color: var(--paragraph-colour);
+  line-height: 1.6;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.footer-column ul li:hover {
+  color: var(--white-colour);
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--paragraph-colour);
+  margin-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1.5rem;
+}
+
+

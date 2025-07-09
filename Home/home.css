@@ -237,7 +237,7 @@
 /*resturent service*/
 .resturent-service{
    width: 100%;
-   height: 800px;
+   height: 135vh;
    background-color: var(--faded-white); 
    display: flex;
    justify-content: center;
@@ -291,7 +291,7 @@
 .food-item{
     width: 70%;
     height: 60%;
-    margin-top: 100px;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -299,7 +299,7 @@
 }
 .menued-food{
   width: 32%;
-  height: 90%;  
+  height: 100%;  
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -345,3 +345,150 @@
     cursor: pointer;
     transform:scale(1.1)
 }
+
+
+/*our food*/
+.our-food{
+    width: 100%;
+    height: 140vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.our-food-inner{
+    width: 70%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.our-food-top-bar{
+    width: 100%;
+    height: 10%;
+    display: flex;
+}
+.our-food-top-bar-item{
+    flex: 1;
+}
+.our-food-top-bar-right button{
+    border-radius: 5px;
+    background-color: var(--primary-colour);
+    border: none;
+}
+.our-food-top-bar-left{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.our-food-top-bar-left-button{
+    border: 1px solid var(--paragraph-colour);
+    color: var(--paragraph-colour);
+    width: 20%;
+    height: 50%;
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.our-food-top-bar-left-button:hover{
+    border-color: var(--primary-colour);
+    color: var(--primary-colour);
+    cursor: pointer;
+}
+.food-items-container{
+    width: 100%;
+    height: 90%;
+    display: flex;  
+}
+.food-list-container{
+    height: 100%;
+    width: 30%;
+    background-color: var(--faded-white);
+    flex-direction: column;
+}
+.food-list-container-img{
+    width: 100%;
+    height: 30%; 
+}
+.food-list-container-img img{
+    object-fit: cover;
+    width: 100%;
+}
+.food-list-container-list{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    object-fit: cover;
+    overflow: hidden;
+}
+.food-list-container-listed-items{
+    width: 90%;
+    flex: 1;
+    border-top: 1px solid var(--paragraph-colour);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    object-fit: contain;   
+}
+.food-list-container-listed-items p{
+    font-size: 13px;
+    color: var(--paragraph-colour);
+}
+.food-list-container-listed-items h5{
+    right: 0;  
+    overflow: hidden;
+    color: var(--primary-colour);
+}
+
+.food-grid-container{
+    height: 100%;
+    flex: 1;
+    background-color: var(--faded-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.food-grid-container-inner{
+    width: 95%;
+    height: 95%;
+    flex-direction: column;
+    display: flex;
+}
+.menued-item-container{
+    flex: 1;
+    display: flex;
+}
+.menu-items{
+    flex: 1;
+}
+.menued-item-upper{
+    margin-bottom: 4px;
+}
+.menued-item-bottom{
+    margin-top: 4px;
+}
+.menu-item-pic{
+    width: 100%;
+    height: 65%;
+}
+.menu-item-pic img{
+    height: 100%;
+    width: 100%;
+}
+.menu-item-name{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.menu-item-name img{
+    width: 25%;
+}
+.menu-item-name h6{
+    color: var(--primary-colour);
+}
+/*our food*/
+
