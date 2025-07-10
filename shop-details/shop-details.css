@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --secondary-colour: #111111;
+  --primary-colour: #CB3A1A;
+  --paragraph-colour: #74787C;
+  --white-colour: #ffffff;
+  --faded-white: #FAF4EE;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+}
+
+/* Top Bar Styles */
+.top-bar {
+  width: 100%;
+  background-color: var(--secondary-colour);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: var(--white-colour);
+}
+.top-bar-container {
+  width: 93%;
+  margin: 25px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+.top-bar-infor-left ul,
+.top-bar-infor-right ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+.top-bar-infor-right {
+  justify-content: end;
+}
+.top-bar-infor-right ul li:hover {
+  color: var(--paragraph-colour);
+  cursor: pointer;
+}
+.top-bar-buttons {
+  width: 93%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+.top-bar-logo img {
+  width: 165px;
+  height: auto;
+}
+.top-bar-buttons-menu ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  font-size: 14px;
+  color: var(--white-colour);
+}
+.top-bar-buttons-menu ul li:hover {
+  color: var(--paragraph-colour);
+  cursor: pointer;
+}
+.book-a-table .booking-table {
+  border: 1px solid var(--primary-colour);
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Banner */
+.page-banner {
+  background-image: url('../img/shop-banner.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white-colour);
+  text-align: center;
+}
+.page-banner h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+/* Main Section */
+.shop-details-section {
+  max-width: 1200px;
+  margin: 3rem auto;
+  display: flex;
+  gap: 2rem;
+  padding: 0 2rem;
+}
+.shop-details-section img {
+  max-width: 100%;
+  border-radius: 6px;
+}
+.shop-details-content {
+  flex: 1;
+}
+.shop-details-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.shop-details-content p {
+  color: var(--paragraph-colour);
+  margin-bottom: 1rem;
+}
+.shop-details-content .price {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+.shop-details-content .old-price {
+  text-decoration: line-through;
+  color: #aaa;
+  margin-left: 10px;
+}
+.shop-details-content button {
+  background-color: var(--primary-colour);
+  color: var(--white-colour);
+  padding: 10px 20px;
+  border: none;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+/* Tabs */
+.shop-tabs {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+.tab-buttons {
+  display: flex;
+  gap: 2rem;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 1rem;
+}
+.tab-buttons button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: var(--secondary-colour);
+}
+.tab-buttons button.active {
+  color: var(--primary-colour);
+  font-weight: 600;
+}
+.tab-content {
+  padding-top: 1.5rem;
+  color: var(--paragraph-colour);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--secondary-colour);
+  color: var(--white-colour);
+  padding: 4rem 5%;
+}
+
+.footer .footer-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 220px;
+}
+.footer-logo img{
+  width: 50%;
+}
+
+.footer-column h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: var(--primary-colour);
+}
+
+.footer-column p,
+.footer-column li {
+  font-size: 0.95rem;
+  color: var(--paragraph-colour);
+  line-height: 1.6;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.footer-column ul li:hover {
+  color: var(--white-colour);
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--paragraph-colour);
+  margin-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1.5rem;
+}
+.footer-bottom ul{
+  list-style: none;
+}
