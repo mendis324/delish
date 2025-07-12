@@ -172,18 +172,41 @@ body {
     margin-bottom: 1.5rem;
 }
 
-.contact-grid {
+.details-list{
+    width: 100%;
+    height: 50%;
+    border-left: none;
+    border-right: none;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    margin-bottom: 1rem;
-    font-size: 0.9rem;
+    grid-template-rows: 1fr 1fr;
+}
+.details-list-items{
+    border: 1px solid var(--paragraph-colour);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.t{
+    border-left: none;
+    border-right: none;
+}
+.b{
+    border-right: none;   
+}
+.o{
+    border-bottom: none;
+}
+.n{
+    border-bottom: none;
 }
 
-.contact-grid i {
+.details-list i {
     margin-right: 0.5rem;
     color: var(--primary-colour);
+    
 }
+
 
 .chef-info button {
     background: var(--primary-colour);
@@ -193,6 +216,7 @@ body {
     border-radius: 4px;
     cursor: pointer;
     font-size: 0.9rem;
+    margin-top: 1rem;
 }
 
 .chef-photo {
