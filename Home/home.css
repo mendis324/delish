@@ -491,3 +491,106 @@
 }
 /*our food*/
 
+/* Footer */
+.footer {
+  background-color: var(--secondary-colour);
+  color: var(--white-colour);
+  padding: 4rem 5%;
+}
+
+.footer .footer-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.footer-logo img {
+  width: 100px;
+  margin-bottom: 1rem;
+}
+
+.footer-logo p {
+  color: var(--paragraph-colour);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.social-icons i {
+  margin-right: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-column h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: var(--white-colour);
+}
+
+.footer-column p,
+.footer-column li {
+  font-size: 0.95rem;
+  color: var(--paragraph-colour);
+  line-height: 1.6;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.footer-column ul li:hover {
+  color: var(--white-colour);
+}
+
+.footer-newsletter input {
+  padding: 0.5rem;
+  width: 80%;
+  border: none;
+  margin-bottom: 0.5rem;
+}
+
+.footer-newsletter button {
+  padding: 0.5rem 1rem;
+  background-color: var(--primary-colour);
+  color: var(--white-colour);
+  border: none;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--paragraph-colour);
+  margin-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1.5rem;
+}
+
+.footer-bottom ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 1rem;
+  padding: 0;
+  margin-top: 0.5rem;
+}
+
+.footer-bottom ul li:hover {
+  color: var(--white-colour);
+  cursor: pointer;
+}
+/* Footer */
+

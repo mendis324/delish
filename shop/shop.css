@@ -187,6 +187,7 @@ body {
   color: var(--primary-colour);
   border-color: var(--primary-colour);
 }
+/* coffee house */
 
 /* Footer */
 .footer {
@@ -289,3 +290,4 @@ body {
   color: var(--white-colour);
   cursor: pointer;
 }
+/* Footer */
